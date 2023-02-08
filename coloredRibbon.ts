@@ -1,4 +1,4 @@
-function createRibbons(sendBuilder: any) {
+function createRibbons(sendBuilder: any = {}) {
     for (const key in sendBuilder) {
         if (key in builder) {
             builder[key] = sendBuilder[key];
